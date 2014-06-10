@@ -26,7 +26,7 @@ public class FrenchTest extends HudsonTestCase {
     FreeStyleBuild freeStyleBuild = scheduleBuild2.get();
     assertBuildStatus(Result.SUCCESS, freeStyleBuild);
     assertNotNull(freeStyleBuild.getAction(FrenchBadgeAction.class));
-    freeStyleBuild.getLog(100).contains("Bonjour");
+    assertTrue(freeStyleBuild.getLog(100).get(1).contains("Bonjour"));
 
   }
 
