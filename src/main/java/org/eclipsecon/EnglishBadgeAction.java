@@ -7,7 +7,7 @@ import hudson.model.AbstractBuild;
  * @author : Anthony Dahanne
  */
 public class EnglishBadgeAction implements BuildBadgeAction{
-  private final static String ICON_PATH = "/plugin/soiree-eclipse/images/english_64x64.png";;
+  private final static String ICON_PATH = "/plugin/hello-eclipsecon/images/english_64x64.png";;
   private final AbstractBuild build;
 
   public EnglishBadgeAction(AbstractBuild build) {
